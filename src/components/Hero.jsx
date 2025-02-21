@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 
 const Hero = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "h1, p",
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, stagger: 1 }
+    );
+    gsap.fromTo(
+      ".hero-bottom",
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, delay: 2 }
+    );
+    gsap.fromTo(
+      ".video-sec video",
+      { opacity: 0, scale: 0.5 },
+      { opacity: 1, scale: 1, duration: 1, delay: 3 }
+    );
+  }, []);
+
   return (
-    <section className="hero-sec" id="#hero">
+    <section className="hero-sec" id="hero">
       <div className="wrapper">
         <div className="video-sec">
           <video
+            className="hero-video"
             src="src/assets/hero-sec-video.webm"
             autoPlay
             muted

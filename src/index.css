@@ -118,6 +118,14 @@ header .wrapper .logo {
   width: 8rem;
 }
 
+header .wrapper .logo img{
+  transition: all 0.4s ease-out;
+}
+
+header .wrapper .logo img:hover{
+  transform: scale(1.05);
+}
+
 .navbar nav li a:hover {
   color: white;
 }

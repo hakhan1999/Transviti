@@ -7,7 +7,9 @@ const Header = () => {
     <header>
       <div className="wrapper container">
         <div className="logo">
-          <img src="src/assets/logo.svg" alt="Logo Raycast" />
+          <Link to='#'>
+            <img src="src/assets/logo.svg" alt="Logo Raycast" />
+          </Link>
         </div>
         <div className="navbar">
           <Navbar />
