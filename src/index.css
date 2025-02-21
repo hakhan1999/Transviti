@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.8333333333vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media (max-width:991px) {
+  html {
+    font-size: 1.3333334vw;
+  }
+}
+
+@media (max-width:600px) {
+  html {
+    font-size: 4.102564103vw;
+  }
+}
+
+body {
+  font-family: "Inter", serif;
+  background: #07080a;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #9c9c9d;
+  font-size: 1.25rem;
+}
+
+/* ----------- Header Start ----------- */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  z-index: 99;
+}
+
+.container {
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  padding: 1.5rem 2.5rem;
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  border: 0.063rem solid #ffffff0f;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(137deg, rgba(17, 18, 20, .75) 4.87%, rgba(12, 13, 15, .9) 75.88%);
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar nav li {
+  list-style: none;
+}
+
+.navbar nav li a {
+  transition: all 0.4s ease-out;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.buttons .log-in {
+  padding: 0.75rem 0.5rem;
+  transition: all 0.4s ease-out;
+}
+
+.buttons .log-in:hover {
+  color: white;
+}
+
+.buttons a {
+  font-weight: 500;
+}
+
+a.white-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2f3031;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, .5), 0 0 14px 0 hsla(0, 0%, 100%, .19), inset 0 -1px .4px 0 rgba(0, 0, 0, .2), inset 0 1px .4px 0 #fff;
+  background: #e6e6e6;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-out;
+  width: fit-content;
+}
+
+a.white-btn img {
+  width: 1.25rem;
+  height: 1.25rem;
+  filter: brightness(0) saturate(100%) invert(19%) sepia(7%) saturate(156%) hue-rotate(169deg) brightness(92%) contrast(96%);
+}
+
+header .wrapper .logo {
+  width: 8rem;
+}
+
+.navbar nav li a:hover {
+  color: white;
+}
+
+a.white-btn:hover {
+  background: white;
+}
+
+.navbar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------- Header End ----------- */
+
+/* ----------- Hero Section Start ----------- */
+
+.video-sec {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.video-sec video {
+  width: 100%;
+}
+
+.hero-sec .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 23.125rem;
+  padding-bottom: 13.25rem;
+}
+
+.hero-sec .content h1 {
+  font-size: 5rem;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-sec .content p {
+  font-size: 1.5rem;
+  width: 35%;
+  text-align: center;
+}
+
+.hero-sec .hero-bottom {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-sec .hero-bottom .hero-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+a.black-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .05), 0 0 0 1px hsla(0, 0%, 100%, .25), inset 0 -1px 0 0 rgba(0, 0, 0, .2);
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, .03), hsla(0, 0%, 100%, .1));
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-out;
+  width: fit-content;
+}
+
+a.black-btn img {
+  width: 1.25rem;
+  height: 1.25rem;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7476%) hue-rotate(110deg) brightness(98%) contrast(108%);
+}
+
+a.black-btn:hover {
+  box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .05), 0 0 0 1px hsla(0, 0%, 100%, .5), inset 0 -1px 0 0 rgba(0, 0, 0, .2);
+}
+
+.hero-sec .versions {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family: "Geist Mono", serif;
+  color: #9c9c9d;
+}
+
+.glowing-btn {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.glowing-btn img {
+  width: 1.25rem;
+  filter: brightness(0) saturate(100%) invert(65%) sepia(0%) saturate(2327%) hue-rotate(234deg) brightness(95%) contrast(86%);
+  margin-left: 0.5rem;
+}
+
+.glowing-btn-wrapper {
+  padding: 0.063rem;
+  background: conic-gradient(from calc(var(--r2) - 80deg) at var(--x) 15px, transparent 0, #eca5a7 20%, transparent 25%), #452324;
+  border-radius: 2.688rem;
+  box-shadow: 0 0 20px 0 rgba(245, 48, 107, .1);
+  transition: all 0.4s ease-out;
+  transform: translateZ(0);
+  width: fit-content;
+}
+
+.glowing-btn-wrapper.animate {
+  animation: animation-1 -.64s linear 3s infinite, animation-2 -.64s linear 3s infinite;
+}
+
+.glowing-btn-wrapper:hover {
+  background-color: #833637;
+  box-shadow: 0 0 20px 3px rgba(245, 49, 108, .25)
+}
+
+.btn-anchor {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.813rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  background: #130d0e;
+  border-radius: 62.5rem;
+}
+
+.btn-anchor .btn-span {
+  position: relative;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.btn-anchor .btn-span:before {
+  position: absolute;
+  top: 50%;
+  left: -1.1rem;
+  pointer-events: none;
+  content: "|";
+  transform: translateY(-50%)
+}
+
+.btn-anchor .introducing {
+  color: white;
+  margin-right: 0.5rem;
+}
+
+@property --r2 {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg
+}
+
+@property --x {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0
+}
+
+@keyframes animation-2 {
+  0% {
+    --x: 1.25rem
+  }
+
+  32.82275711% {
+    --x: 27rem
+  }
+
+  50% {
+    --x: 27rem
+  }
+
+  82.82275711% {
+    --x: 1.25rem
+  }
+
+  to {
+    --x: 1.25rem
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    --r2: 0deg
+  }
+
+  32.82275711% {
+    --r2: 0deg
+  }
+
+  50% {
+    --r2: 180deg
+  }
+
+  82.82275711% {
+    --r2: 180deg
+  }
+
+  to {
+    --r2: 360deg
+  }
+}
+
+/* ----------- Hero Section End ----------- */
+
+/* ----------- Tools Section Start ----------- */
+.tools-sec {
+  padding: 10rem 0;
+}
+
+.tools-sec .top-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools-sec .top-sec .para-sec p,
+.tools-sec .top-sec .para-sec h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.tools-sec .top-sec .para-sec p {
+  color: #6a6b6c;
+}
+
+.tools-sec .top-sec .para-sec {
+  width: 30%;
+}
+
+.tabs a {
+  text-transform: capitalize;
+  transition: all 0.4s ease-out;
+  position: relative;
+  height: 2.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.8rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: linear-gradient(137deg, rgba(17, 18, 20, .75) 4.87%, rgba(12, 13, 15, .9) 75.88%);
+  box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+  border-radius: 6.25rem;
+  border: 0.063rem solid #ffffff0f;
+  padding: 1rem 1.5rem;
+}
+
+.tabs a:hover {
+  color: white;
+}
+
+.active-backdrop {
+  position: absolute;
+  background: radial-gradient(51.07% 92.4% at 51% 7.61%, #5a5a5a 0, #1a1a1a 100%);
+  width: 100%;
+  height: 100%;
+  border-radius: 6.25rem;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.tab-link {
+  position: relative;
+}
+
+/* Carousel Start  */
+.carousel {
+  margin-top: 5rem;
+}
