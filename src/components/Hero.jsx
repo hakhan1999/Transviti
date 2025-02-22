@@ -5,7 +5,7 @@ import gsap from "gsap";
 const Hero = () => {
   useEffect(() => {
     gsap.fromTo(
-      "h1, p",
+      ".hero-sec h1,.hero-sec p",
       { opacity: 0, y: 50 },
       { opacity: 1, y: 0, duration: 1, stagger: 1 }
     );

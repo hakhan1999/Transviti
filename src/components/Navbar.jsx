@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const navLinks = [
@@ -45,14 +45,49 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav>
-      {navLinks.map((item) => (
-        <li key={item.id}>
-          <Link to={item.path}>{item.name}</Link>
-        </li>
-      ))}
-    </nav>
+    <>
+      <nav className="desktop-nav">
+        <ul>
+          {navLinks.map((item) => (
+            <li key={item.id}>
+              <Link to={item.path} onClick={() => setIsOpen(false)}>
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <nav className="mobile-nav">
+        <img
+          src={
+            isOpen ? "src/assets/close-icon.svg" : "src/assets/menu-icon.svg"
+          }
+          alt="Menu Icon"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+          style={{ display: window.innerWidth < 1024 ? "block" : "none" }}
+        />
+        <ul className={`menu ${isOpen ? "open" : ""}`}>
+          {navLinks.map((item) => (
+            <li key={item.id}>
+              <Link to={item.path} onClick={() => setIsOpen(false)}>
+                {item.name}
+              </Link>
+            </li>
+          ))}
+          <div className="log-in">
+            <Link to="#">Log In</Link>
+          </div>
+        </ul>
+      </nav>
+    </>
   );
 };
 

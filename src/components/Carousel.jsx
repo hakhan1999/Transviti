@@ -37,11 +37,17 @@ const Carousel = ({ activeTab, categories = {} }) => {
       {Object.entries(categories).map(([key, items]) => (
         <Swiper
           key={key}
+          modules={[Navigation]}
           slidesPerView={4}
           spaceBetween={56}
           loop={true}
           navigation={true}
-          modules={[Navigation]}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            1024: { slidesPerView: 4 },
+          }}
           className={`carousel-swiper ${activeTab === key ? "active" : ""}`}
         >
           {items.map((item) => (
