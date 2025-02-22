@@ -67,7 +67,7 @@ const Navbar = () => {
       <nav className="mobile-nav">
         <img
           src={
-            isOpen ? "src/assets/close-icon.svg" : "src/assets/menu-icon.svg"
+            isOpen ? "/close-icon.svg" : "/menu-icon.svg"
           }
           alt="Menu Icon"
           onClick={toggleMenu}

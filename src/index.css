@@ -521,7 +521,7 @@ a.black-btn:hover {
 .carousel .swiper-button-prev:after,
 .carousel .swiper-rtl .swiper-button-next:after {
   content: '';
-  background-image: url(assets/prev-arrow.svg);
+  background-image: url(/prev-arrow.svg);
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7465%) hue-rotate(71deg) brightness(103%) contrast(83%);
   width: 1.5rem;
   height: 1.5rem;
@@ -543,7 +543,7 @@ a.black-btn:hover {
 .carousel .swiper-button-next:after,
 .carousel .swiper-rtl .swiper-button-prev:after {
   content: '';
-  background-image: url(assets/arrow-carousel.svg);
+  background-image: url(/arrow-carousel.svg);
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7465%) hue-rotate(71deg) brightness(103%) contrast(83%);
   width: 1.5rem;
   height: 1.5rem;

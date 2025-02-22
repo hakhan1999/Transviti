@@ -61,7 +61,7 @@ const Carousel = ({ activeTab, categories = {} }) => {
                     </div>
                     <div className="top-right">
                       <img
-                        src="src/assets/arrow-carousel.svg"
+                        src="/arrow-carousel.svg"
                         alt="Arrow Icon"
                       />
                     </div>
@@ -79,7 +79,7 @@ const Carousel = ({ activeTab, categories = {} }) => {
           <div className="browseBtn">
             <Link to="#">
               <p>Browse thousands more</p>
-              <img src="src/assets/arrow-learn.svg" alt="Arrow Browse" />
+              <img src="/arrow-learn.svg" alt="Arrow Browse" />
             </Link>
           </div>
         </Swiper>

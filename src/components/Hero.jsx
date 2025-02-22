@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="video-sec">
           <video
             className="hero-video"
-            src="src/assets/hero-sec-video.webm"
+            src="/hero-sec-video.webm"
             autoPlay
             muted
             loop
@@ -43,11 +43,11 @@ const Hero = () => {
         <div className="hero-bottom">
           <div className="hero-btns">
             <Link to="#" className="mac white-btn">
-              <img src="src/assets/apple.svg" alt="Apple Icon" />
+              <img src="/apple.svg" alt="Apple Icon" />
               <span>Download for Mac</span>
             </Link>
             <Link to="#" className="windows black-btn">
-              <img src="src/assets/windows.svg" alt="Windows Icon" />
+              <img src="/windows.svg" alt="Windows Icon" />
               <span>Join Windows Waitlist</span>
             </Link>
           </div>
@@ -60,7 +60,7 @@ const Hero = () => {
                 <span className="introducing">Introducing Raycast Focus</span>
                 <span className="btn-span">
                   Learn more
-                  <img src="src/assets/arrow-learn.svg" alt="Arrow" />
+                  <img src="/arrow-learn.svg" alt="Arrow" />
                 </span>
               </Link>
             </div>
